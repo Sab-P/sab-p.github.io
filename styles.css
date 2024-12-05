@@ -1,0 +1,149 @@
+html, body {
+    height: 100%; 
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+
+#site-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #880D1E ;
+    color: white;
+}
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #D7FDEC;
+    color: #541388; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #880D1E;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #EDB458; 
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle:checked + .hamburger + .navbar {
+    display: block;
+}
+
+.navbar {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide menu by default */
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-toggle:checked + .hamburger + .navbar {
+        display: block; 
+    }
+}
+
+#main-content {
+    flex: 1; 
+    padding: 20px;
+    text-align: center; 
+}
+
+.main-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.main-paragraph {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.pill-button {
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 30px;
+    background-color: white; 
+    color: #880D1E;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    display: inline-block; /* behave like a block */
+}
+
+.pill-button:hover {
+    background-color: #EDB458; 
+    color: #880D1E;
+}
+
+.image-container {
+      text-align: center; 
+      margin: 10px 0; 
+        }
+.image-container img {
+      width: 40%; 
+      height: auto; 
+           
+}
