@@ -3,40 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS 108 Website</title>
-    <link rel="stylesheet" href="https://Sab-P.github.io/styles.css">
-    <link rel="stylesheet" href="https://Sab-P.github.io/stylesConcept.css">
+    <title>Accessible Accordion</title>
 </head>
 <body>
 <div class="container">
-    <header id="site-header">
-        <div class="logo">My Website</div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
-        <label for="menu-toggle" class="hamburger" aria-hidden="true">&#9776;</label>
-        <nav class="navbar" role="navigation" aria-label="Main Navigation">
-            <ul class="nav-list">
-                <li><a href="https://Sab-P.github.io/index.html" class="nav-link">Home</a></li>
-                <li><a href="https://Sab-P.github.io/Concept.html" class="nav-link">Concept</a></li>
-                <li><a href="https://Sab-P.github.io/Design.html" class="nav-link">Design</a></li>
-                <li><a href="https://Sab-P.github.io/Execution.html" class="nav-link">Execution</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main id="main-content" tabindex="-1">
-        <h1 class="main-heading">Crafting a Vision</h1>
-        <p class="main-paragraph">
-            Creating an unforgettable escape room experience starts with an enticing storyline that captivates players from the moment they step inside! 
-            <br>Here are some key considerations to keep in mind:
+        <h1>Crafting a Vision</h1>
+        <p>
+            Creating an unforgettable escape room experience starts with an enticing storyline that captivates players from the moment they step inside!
+            Here are some key considerations to keep in mind:
         </p>
 
         <div class="accordion" role="region" aria-labelledby="accordion-heading">
             <h2 id="accordion-heading" class="visually-hidden">Accordion Menu</h2>
 
-
             <div class="accordion-item">
                 <input type="checkbox" id="item1" class="toggle-checkbox" aria-controls="content1">
-                <label for="item1" class="accordion-header" role="button" aria-expanded="false">Identify Your Target Audience:</label>
+                <label for="item1" class="accordion-header" role="button" aria-expanded="false">
+                    Identify Your Target Audience:
+                </label>
                 <div id="content1" class="accordion-content" role="region">
                     <p>Determine the age group you want to attract. Will your escape room cater to kids, adults, or all ages? Understanding your audience helps you refine your theme ideas to resonate with your players.</p>
                     <div class="image-container">
@@ -45,10 +30,11 @@
                 </div>
             </div>
 
-
             <div class="accordion-item">
                 <input type="checkbox" id="item2" class="toggle-checkbox" aria-controls="content2">
-                <label for="item2" class="accordion-header" role="button" aria-expanded="false">Assess Your Space:</label>
+                <label for="item2" class="accordion-header" role="button" aria-expanded="false">
+                    Assess Your Space:
+                </label>
                 <div id="content2" class="accordion-content" role="region">
                     <p>Evaluate the available space for your escape room. This will guide you in selecting appropriate puzzles and props, as well as determining the maximum number of players that can participate.</p>
                 </div>
@@ -56,16 +42,19 @@
 
             <div class="accordion-item">
                 <input type="checkbox" id="item3" class="toggle-checkbox" aria-controls="content3">
-                <label for="item3" class="accordion-header" role="button" aria-expanded="false">Tap into Current Trends:</label>
+                <label for="item3" class="accordion-header" role="button" aria-expanded="false">
+                    Tap into Current Trends:
+                </label>
                 <div id="content3" class="accordion-content" role="region">
                     <p>Explore popular genres—like mystery, history, science fiction, or pop culture—and infuse them with your unique twist. Consider how you can incorporate specific settings, scenarios, or characters that align with your audience and available space.</p>
                 </div>
             </div>
 
-
             <div class="accordion-item">
                 <input type="checkbox" id="item4" class="toggle-checkbox" aria-controls="content4">
-                <label for="item4" class="accordion-header" role="button" aria-expanded="false">Prioritize Visual Appeal:</label>
+                <label for="item4" class="accordion-header" role="button" aria-expanded="false">
+                    Prioritize Visual Appeal:
+                </label>
                 <div id="content4" class="accordion-content" role="region">
                     <div class="image-container">
                         <img src="https://Sab-P.github.io/sitc.jpg" alt="A detailed puzzle design in an escape room">
@@ -73,22 +62,8 @@
                     <p>An engaging theme is vital, but it must be supported by visually captivating puzzles and props. Ensure that your designs enhance the overall experience and fit seamlessly into the narrative.</p>
                 </div>
             </div>
-
-            <div class="accordion-item">
-                <input type="checkbox" id="item5" class="toggle-checkbox" aria-controls="content5">
-                <label for="item5" class="accordion-header" role="button" aria-expanded="false">Analyze the Competition:</label>
-                <div id="content5" class="accordion-content" role="region">
-                    <p>Research nearby escape room companies to ensure your theme stands out. Avoid similarities that could lead to unnecessary competition and instead carve out a unique niche for your game!</p>
-                </div>
-            </div>
         </div>
-        <hr>
-        <button class="pill-button" onclick="location.href='https://Sab-P.github.io/Design.html'" aria-label="Go to Design page">Move to "Design" to Learn More</button>
     </main>
-
-    <footer id="site-footer">
-        <p>&copy; 2024 My Website</p>
-    </footer>
 </div>
 </body>
 </html>
